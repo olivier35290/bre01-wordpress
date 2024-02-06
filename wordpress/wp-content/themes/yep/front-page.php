@@ -13,21 +13,38 @@
 <title><?php echo get_bloginfo( 'name' );?></title>
 	</head>
     <body>
+        <?php  
+        	$menuItems = getNavigationMenu();  
+        ?>
+
          <header>
-            <?phpfunction register_my_menus() 
-            { 
-            	register_nav_menus( array( 
-            	'header-menu' => __( 'Menu de navigation' ))); 
-            }
-            add_action( 'init', 'register_my_menus' );
-            ?>
+
         <nav>
             <ul class="list">
                 <li><img class="img-nav" src="<?php echo get_template_directory_uri(); ?>/monordi.png" alt="logo"></li>
-                <li><a href="">ACCUEIL</a></li>
-                <li><a href="">A PROPOS</a></li>
-                <li><a href="">MES PROJETS</a></li>
-                <li><a href="">ME CONTACTER</a></li>
+                
+                <?php foreach($menuItems as $item) { ?>  
+                    <li>  
+                        <a href="<?= $item->url ?>">  
+                            <?= $item->title ?>  
+                        </a>  
+                    </li>  
+                <?php  
+                }  
+                ?>
+                <?php  
+    
+                    $menuItems = getNavigationMenu();  
+                    $data = getHomepageData();  
+                      
+                ?>
+                <section id="about">  
+                    <h2><?= $data["a-propos"]["titre"] ?></h2>  
+                    <p>  
+                        <?= $data["a-propos"]["contenu"] ?>  
+                    </p>  
+                </section>
+
             </ul>
         </nav>
         <section class="title">
