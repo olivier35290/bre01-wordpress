@@ -1,0 +1,71 @@
+/*!  
+  
+Theme Name: Yep  
+Description: Thème WordPress custom pour Prénom Nom  
+Version: 1.0  
+Author: Prénom Nom  
+Author URI: Mettez le lien de votre profil GitHub  
+  
+*/
+ @import "header.css";
+ @import "main.css";
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+footer {
+  background-color: #5707cb;
+  color: white;
+  text-align: left;
+  padding: 20px;
+}
+
+/* Style du formulaire */
+
+.formulaire {
+  width: 500px;
+  margin: 0 auto;
+  background-color: #5707cb;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  
+}
+
+textarea {
+  height: 100px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #5707cb;
+  color: #fff;
+  border: 1px solid #000 white;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 510px;
+}
+
+button:hover {
+  background-color: #ccc;
+  color: #000;
+}

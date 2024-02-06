@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    background-color: #081138;
+    margin: 0;
+    justify-content: left;
+    align-items: center;
+}
+
+.list li {
+    padding: 1em;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.list a {
+    text-decoration: none;
+    color: white;
+}
+
+.title_h1 {
+    text-align: center;
+    margin: 0;
+    padding: 0.5em;
+    color: white;
+    font-size: 2rem;
+}
+
+.title_h2 {
+    text-align: center;
+    color: #d52074;
+    margin: 0.2em;
+}
+
+.title {
+    background-image: url(image_ordi.jpeg);
+    background-position: center center;
+    background-size: cover;
+    height: 30rem;
+    margin: 0;
+}
+
+.img-nav {
+    background-size: cover;
+    background-position: center center;
+    width: 4rem;
+}
