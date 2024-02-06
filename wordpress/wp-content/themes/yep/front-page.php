@@ -75,6 +75,23 @@
     	    quis nostrud.</p>
     	    </section>
     	    <section class="projets">
+    	        
+    	       <!-- partie 16....
+    	       
+    	       <article data-img="<?= $projet["image"]["url"] ?>">
+                </article>
+                <script>
+                                window.addEventListener("DOMContentLoaded", function(){  
+                   let $articles = document.querySelectorAll("#projects article");  
+                  
+                   for(let i = 0; i < $articles.length; i++)  
+                   {  
+                       let $url = $articles[i].getAttribute("data-img");  
+                       $articles[i].style.backgroundImage = `url("${$url}")`;  
+                   }  
+                });
+                </script>
+                -->
     	        <h3>MES DERNIERS PROJETS</h3>
     	        <div class="cards">
     	            <article class="card pharma">
@@ -117,6 +134,14 @@
                     <button type="submit">Envoyer</button>
                   </form>
             </div>
+            <!-- partie 17
+            
+            <section id="contact">  
+                <h2>Me contacter</h2>  
+                <?php //echo do_shortcode("[contact-form-7 id="fe38d44" title="Formulaire de contact 1"]"); ?>  
+            </section>
+            -->
+            
         </footer>
             
 
